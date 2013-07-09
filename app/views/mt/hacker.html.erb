@@ -1,0 +1,32 @@
+<div style = "padding-top:5%;  text-align:center; margin:0 auto;">
+
+<h5 style = "color:#e74c3c" > 해킹하려고 하지마세요ㅡㅡ </h5>
+
+<p> 해킹을 시도한 당신의 이름은 <%=@name%> 입니다.</p>
+<p> 당신의 ip주소는 <%= @ip_add %> 입니다.</p>
+
+<p>아래의 명단은 해킹을 시도한 사람의 목록입니다.</p>
+
+<% @hk.each do |x|%>
+<p>이름: <%= x.username%></p>
+<p>ip 주소: <%= x.ip_add%></p>
+<% end%>
+
+
+</div>
+
+
+
+
+
+<br>
+<a href="/mt/write" class = "btn btn-large btn-block btn-danger">돌아가기</a>
+<br>
+
+
+<br><Br>
+
+
+
+<br><br>
+

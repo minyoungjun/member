@@ -1,0 +1,26 @@
+<div style = "padding-top:5%;  text-align:center; margin:0 auto;">
+
+<h5 style = "color:#3498db" >잘 올라갔지요?</h5>
+
+</div>
+<br>
+<p>이름 : <%= @mem.username%> </p>
+<p>닮은 동물 :<%= @mem.animal%></p>
+<p>이야기 :<%= @mem.content%></p>
+
+<% @mem.photos.each do |x|%>
+
+<img src = "/img/<%=x.savedname%>" style ="width:100px; height:100px;"/> 
+<%end%>
+
+<br>
+
+<a href="/mt/write" class = "btn btn-block btn-danger">다시 만들기(같은 이름으로는 못만듭니다. 이름을 약간 바꾸세요)</a>
+
+<br>
+<a href="/mt/list" class = "btn btn-block btn-inverse" >돌아가기</a>
+
+
+
+
+

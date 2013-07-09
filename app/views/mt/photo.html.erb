@@ -1,0 +1,24 @@
+<div style = "padding-top:5%;  text-align:center; margin:0 auto;">
+
+<h5 style = "color:#2ccc71" >참여해주셔서 감사합니다!</h5>
+
+</div>
+<br>
+<p>본인의 어릴적 사진 || 과거 사진을 보내주세요! 어릴적 사진을 보고 누군지 맞추기 퀴즈를 할 예정입니다! ㅎㅎ</p>
+
+<br>
+<%= form_tag({:action => "upload"}, :multipart => true) do%>
+<%= file_field_tag 'img'%>
+<br><br>
+<%= submit_tag '보내기', :class => "btn btn-primary"%>
+
+<%end%>
+<br>
+
+
+<br><Br>
+</form>
+
+
+<br><br>
+

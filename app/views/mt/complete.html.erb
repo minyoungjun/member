@@ -1,0 +1,25 @@
+<div style = "padding-top:5%;  text-align:center; margin:0 auto;">
+
+<h5 style = "color:#e74c3c" >파일이 업로드 되었습니다! 더 올리실 분은 더 올려주세요 ㅎㅎ</h5>
+
+</div>
+
+
+<%= form_tag({:action => "upload"}, :multipart => true) do%>
+<%= file_field_tag 'img'%>
+<br><br>
+<%= submit_tag '보내기', :class => "btn btn-primary"%>
+
+<%end%>
+
+<br>
+<a href="/mt/list" class = "btn btn-large btn-block btn-danger">돌아가기</a>
+<br>
+
+
+<br><Br>
+
+
+
+<br><br>
+

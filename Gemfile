@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem "rake", "~> 10.1.0"
 gem "flat-ui-rails", "~> 0.0.2"
 gem 'therubyracer'
 gem 'rails', '3.2.13'

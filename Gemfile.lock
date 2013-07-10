@@ -113,6 +113,7 @@ DEPENDENCIES
   flat-ui-rails (~> 0.0.2)
   jquery-rails
   rails (= 3.2.13)
+  rake (~> 10.1.0)
   sass-rails (~> 3.2.3)
   sqlite3
   therubyracer

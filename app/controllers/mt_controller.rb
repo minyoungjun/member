@@ -58,6 +58,18 @@ end
 
 
 
+
+
+def minyoungcheck
+
+
+@mem = Member.all
+
+
+
+
+end
+
 def check
 
 if (params[:id] != nil || session[:check] == nil)
